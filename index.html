@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="fa-bookmark">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  container">
+        <div class="container my-4 d-flex justify-content-between">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-cloud"></i> Weather</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active a" aria-current="page" href="#" id="home">Home</a>
+                    </li>
+                    <li class="nav-item  mx-3 b">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item  mx-3 b">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item  mx-3 b">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item  mx-3 b">
+                        <a class="nav-link" href="#" id="contact_btn" >Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="con d-block py-4" id="con">
+        <input type="text" class="form-control w-75 mx-auto my-4 py-3" placeholder="find your location" name=""
+            id="search">
+        <button type="button" class="btn ">Send</button>
+
+        <div class="row container mx-auto">
+            <div class="col-lg-4 p-0 ">
+                <div class="card text-bg-dark mb-3 p-0 mx-0 h-100">
+                    <div class="card-header d-flex justify-content-between"><div id="w-day"></div><div id="mon"></div></div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="place"></h5>
+                        <span class="card-text" id="cur_temp"></span><span>&deg;C</span><br>
+                        <img id="cur_icon"></img>
+                        <p id="cur_state"></p>
+                        <span><i class="fa-solid fa-umbrella"></i> </span><span id="humidity"> </span> <span> <i
+                                class="fa-solid fa-wind"></i> </span><span id="wind"></span>
+                        <span><i class="fa-regular fa-compass"></i> </span><span id="dir"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-0 ">
+                <div class="card text-bg-dark mb-3 p-0 mx-0 h-100">
+                    <div class="card-header text-center" id="day2">Header</div>
+                    <div class="card-body text-center ">
+                        <img id="cur_icon-2"></img><br><br>
+                        <span class="card-text" id="cur_temp-2"></span><span>&deg;C</span><br>
+                        <span class="card-text" id="cur_temp-2-1"></span><span>&deg</span>
+                        <br><br>
+                        <p id="cur_state-2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-0 ">
+                <div class="card text-bg-dark mb-3 p-0 mx-0 h-100">
+                    <div class="card-header text-center" id="day3">Header</div>
+                    <div class="card-body text-center">
+                        <img id="cur_icon-3"></img><br><br>
+                        <span class="card-text" id="cur_temp-3"></span><span>&deg;C</span><br>
+                        <span class="card-text" id="cur_temp-3-1"></span><span>&deg</span>
+                        <br><br>
+                        <p id="cur_state-3"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contact d-none flex-column " id="contact">
+        <div class="con-head d-flex align-items-center py-3 my-4">
+            <a href="" class="mx-2 text-white " id="home-1">Home</a><i class="fa-solid fa-arrow-right-long mx-2 "></i>
+            <p href="" class="my-0 mx-2 text-white">contact</p>
+        </div>
+        <div class="con-content d-flex justify-content-around">
+            <div class="left d-flex flex-column justify-content-end px-2"><span class="text-white"><i
+                        class="fa-solid fa-location-dot text-white"></i> Company Name
+                    INC.
+                    2803 Avenue Street, Los Angeles</span><br>
+                <span> <a href="" class="text-white text-decoration-none"><i class="fa-solid fa-phone text-white "></i>
+                        +1 800 314 235</a> <span> <a href="" class="text-white text-decoration-none"><i
+                                class="fa-solid fa-envelope text-white"></i>
+                            contact@companyname.com</a></span></span>
+            </div>
+            <div class="right w-50">
+                <h3 class="text-white">
+                    Contact US
+                </h3>
+                <p class="text-secondary w-75">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At est
+                    doloribus rerum mollitia accusamus eius culpa deleniti, impedit unde harum?</p>
+                <form action="">
+                    <div class="row my-3">
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="your name.." class="form-control">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Email address..." class="form-control">
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="company name.." class="form-control">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="website..." class="form-control">
+                        </div>
+                    </div>
+                    <textarea type="text" placeholder="message..." class="form-control my-3" rows="7"></textarea>
+
+                    <button type="submit" class="btn ">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+<span class="d-flex justify-content-around align-items-center h"><input type="text"
+        class="form-control w-50  my-4 py-3 in-2" placeholder="enter your email to subscribe..." name="">
+    <button type="button" class="btn  btn-2">Subscribe</button> <span><i class="fa-brands fa-facebook-f"></i><i
+            class="fa-brands fa-twitter"></i><i class="fa-brands fa-google-plus-g"></i><i
+            class="fa-brands fa-pinterest-p"></i></span></span>
+<p class="text-white text-center">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>

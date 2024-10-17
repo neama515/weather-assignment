@@ -1,0 +1,136 @@
+body {
+  background-color: #1e202b;
+}
+nav {
+  background-color: #1e202b !important;
+}
+nav a {
+  color: #ececec !important;
+}
+nav ul li.b {
+  border: solid 2px transparent;
+  border-radius: 30px;
+  padding: 0 10px;
+}
+nav ul li.b:hover {
+  border: solid 2px #03a0d9;
+  border-radius: 30px;
+  padding: 0 10px;
+}
+nav ul li:hover a {
+  color: #03a0d9 !important;
+}
+nav ul li a.a {
+  border: solid 2px #03a0d9;
+  border-radius: 30px;
+    color: #03a0d9 !important;
+
+}
+nav i {
+  color: #03a0d9;
+  font-size: 40px;
+}
+.form-control {
+  background-color: rgb(30, 32, 43);
+  border: 0 solid transparent;
+  border-radius: 100px;
+  position: relative;
+}
+.btn {
+  background-color: #03a0d9;
+  border-radius: 50px;
+  position: absolute;
+  top: 172px;
+  right: 200px;
+  color: white;
+}
+.btn:focus {
+  color: white;
+}
+.form-control::placeholder {
+  color: white;
+  opacity: 1;
+}
+.con {
+  background-color: #03a0d9;
+}
+.in-2 {
+  background-color: rgb(57, 62, 69);
+  margin-left: 20px;
+  
+}
+.h{
+  position: relative 
+  
+}
+.btn-2 {
+  background-color: #03a0d9;
+  border-radius: 50px;
+  position: absolute;
+
+  top: 30%;
+  right: 40%;
+  color: white;
+}
+span i {
+  color: #03a0d9;
+  margin: 0 10px;
+  background-color: rgb(57, 62, 69);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: space-around;
+  text-align: center;
+}
+span i:hover {
+  background-color: #03a0d9;
+  color: white;
+}
+
+#cur_temp,#cur_temp-2,#cur_temp-3{
+  font-size: 40px;
+  font-weight: 700;
+}
+#cur_temp{
+  font-size: 60px;
+}
+.con-head{
+   background-color: rgb(57, 62, 69);
+ border-radius: 50px;
+ width: 80%;
+ margin: 0 auto;
+}
+.con-head a{
+  text-decoration: none;
+}
+.con-content .left{
+     background-color: rgb(57, 62, 69);
+height: 400px;
+border-radius: 10px;
+
+}
+.right input{
+  border:1px grey solid;
+}
+.right input::placeholder{
+  color: grey;
+}
+.right textarea{
+   border:1px grey solid !important;
+   border-radius: 20px !important;
+ 
+}
+.right textarea::placeholder{
+  color: grey;
+}
+form{
+  position: relative;
+}
+form button{
+  position: absolute !important;
+  right: 0px !important;
+  top: 290px !important;
+}
