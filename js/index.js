@@ -35,7 +35,7 @@ display(searchInput.value)
 })
 async function getData(city="cairo") {
   var response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=8c79f1436da64d57abb141419241210&q=${city}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=8c79f1436da64d57abb141419241210&q=${city}&days=3`
   );
 
   let apiData = await response.json();
